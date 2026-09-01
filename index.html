@@ -70,7 +70,7 @@
   <div class="rails" aria-hidden="true"><i></i><i></i><i></i></div>
   <h1 class="brand" id="brand">سكة — سياسة الخصوصية</h1>
   <p class="sub" id="subtitle">تطبيق المواصلات العامة في القاهرة</p>
-  <p class="meta" id="meta">آخر تحديث: ٥ أغسطس ٢٠٢٦</p>
+  <p class="meta" id="meta">آخر تحديث: ٢ سبتمبر ٢٠٢٦</p>
   <div class="toggle">
     <button type="button" id="btn-ar" aria-pressed="true">العربية</button>
     <button type="button" id="btn-en" aria-pressed="false">English</button>
@@ -82,26 +82,29 @@
   <p>لا يتطلب سكة إنشاء حساب، ولا نطلب اسمك أو بريدك الإلكتروني أو رقم هاتفك.</p>
 
   <h2>معرّف الجهاز</h2>
-  <p>عند إرسال أول بلاغ، ينشئ التطبيق رقمًا عشوائيًا (UUID) يُحفظ على جهازك ويُرسل مع كل بلاغ، لمنع تكرار البلاغات من نفس الجهاز. هذا الرقم لا يرتبط بك شخصيًا ولا يمكننا استخدامه للتعرف على هويتك.</p>
-  <p>يمكنك رؤية هذا الرقم داخل التطبيق في صفحة الحساب ← «عن التطبيق»، والضغط عليه لنسخه. لإعادة تعيينه، امسح بيانات التطبيق من إعدادات جهازك — سيُنشأ رقم جديد عند البلاغ التالي. حذف التطبيق وإعادة تثبيته يُنشئ رقمًا جديدًا أيضًا، لأننا أوقفنا نسخ بيانات التطبيق احتياطيًا.</p>
+  <p>في أول مرة يرسل فيها التطبيق أي شيء — بحث ومفتاح «ساعدنا نحسّن سكة» مفعّل، أو بلاغ ترسله بنفسك — ينشئ التطبيق رقمًا عشوائيًا (UUID) يُحفظ على جهازك ويُرسل مع كل ما يُرسل بعد ذلك، لتمييز ما يأتي من الجهاز نفسه. لا يُنشأ هذا الرقم قبل ذلك أبدًا: جهاز لم يرسل شيئًا لا يحمل رقمًا. هذا الرقم لا يرتبط بك شخصيًا ولا يمكننا استخدامه للتعرف على هويتك.</p>
+  <p>يمكنك رؤية هذا الرقم داخل التطبيق في «الملف» ← «عن سكة»، والضغط عليه لنسخه. لإعادة تعيينه، امسح بيانات التطبيق من إعدادات جهازك — سيُنشأ رقم جديد في المرة التالية التي يرسل فيها التطبيق شيئًا. حذف التطبيق وإعادة تثبيته يُنشئ رقمًا جديدًا أيضًا، لأننا أوقفنا نسخ بيانات التطبيق احتياطيًا.</p>
 
   <h2>الموقع الجغرافي</h2>
   <p>إذا سمحت للتطبيق باستخدام موقعك، يُستخدم على جهازك لتحديد أقرب محطة كنقطة بداية. الموقع اختياري — يمكنك بدلًا منه البحث عن محطة أو تحديدها على الخريطة.</p>
   <p>يصل موقعك إلى جهات خارجية في هذه الحالات:</p>
   <ul>
-    <li><strong>عند تصحيح موقع محطة:</strong> النقطة التي تحددها على الخريطة تُرسل إلينا. الخريطة تبدأ من موقعك الحالي، فإن لم تحرّكها فالنقطة قريبة من مكانك.</li>
-    <li><strong>صور الخرائط:</strong> تُحمّل من خوادم CARTO، فيصلها عنوان IP الخاص بك والمنطقة التي تشاهدها — كما يحدث مع أي موقع تزوره.</li>
+    <li><strong>عند تصحيح موقع محطة:</strong> النقطة التي تحددها على الخريطة تُرسل إلينا. الخريطة تبدأ من موقعك الحالي إن كنت قد سمحت بذلك، فإن لم تحرّكها فالنقطة قريبة من مكانك.</li>
+    <li><strong>عند اقتراح خط:</strong> النقاط التي تضعها لكل مرحلة — أين تركب، وأين تنزل، وأي نقاط على الطريق — تُرسل إلينا كإحداثيات اخترتها بنفسك.</li>
+    <li><strong>بحث يبدأ من موقعك:</strong> لا تُرسل إحداثياتك. يُرسل بدلًا منها اسم أقرب محطة طابقناها والمسافة بينك وبينها بالمتر — مسافة إلى نقطة معروفة، لا موقعك. هذا ما يعنيه التطبيق بعبارة «ولا مكانك» في مفتاح «ساعدنا نحسّن سكة»: لا يغادر أي موقع جهازك تلقائيًا.</li>
+    <li><strong>خرائط القاهرة:</strong> مضمّنة داخل التطبيق وتُقرأ من جهازك، فلا يخرج أي طلب من الهاتف لعرضها. خارج تلك المنطقة تُحمّل الخرائط من خوادم OpenFreeMap، فيصلها عنوان IP الخاص بك والمنطقة التي تشاهدها، ولا شيء غير ذلك. ويحدّث التطبيق مرة أسبوعيًا ملف فهرس صغيرًا للخرائط من OpenFreeMap، ولا يحمل هذا الطلب سوى عنوان IP.</li>
     <li><strong>زر «الاتجاهات»:</strong> يفتح تطبيق الخرائط على جهازك ويمرّر له <em>الوجهة فقط</em> — سكة لا يرسل نقطة البداية. تطبيق الخرائط بعدها يستخدم موقعك بصلاحياته الخاصة.</li>
     <li><strong>لصق رابط خرائط مختصر:</strong> يفتح سكة الرابط ليعرف الوجهة، وهو طلب يصل إلى Google ويحمل عنوان IP الخاص بك.</li>
   </ul>
+  <p>الأماكن المحفوظة والرحلات الأخيرة تُحفظ على جهازك فقط. اسم المكان المحفوظ لا يغادر الهاتف أبدًا؛ وإن استخدمته في بحث أو اقتراح خط، تُرسل إحداثياته فقط.</p>
 
   <h2>استخدام التطبيق</h2>
   <p>نوعان من البيانات يُجمعان تلقائيًا:</p>
   <ul>
-    <li><strong>عمليات البحث:</strong> محطة البداية والوجهة وعدد النتائج — لمعرفة الأماكن التي لا تغطيها بياناتنا.</li>
-    <li><strong>الخطوط التي تفتحها:</strong> لمعرفة الخطوط الأكثر استخدامًا.</li>
+    <li><strong>عمليات البحث:</strong> محطة البداية والوجهة وعدد النتائج — لمعرفة الأماكن التي لا تغطيها بياناتنا. وإن بدأ البحث من موقعك أو من نقطة على الخريطة، تُرسل أيضًا المسافة بالمتر بين تلك النقطة والمحطة التي طابقناها (انظر «الموقع الجغرافي» أعلاه).</li>
+    <li><strong>الخطوط التي تفتحها:</strong> أي خط فتحت تفاصيله — لمعرفة الخطوط الأكثر استخدامًا.</li>
   </ul>
-  <p>هذان النوعان فقط يخضعان لمفتاح «ساعدنا نحسّن سكة» في صفحة الحساب. المفتاح مُفعّل افتراضيًا، وإيقافه يوقفهما تمامًا.</p>
+  <p>هذان النوعان فقط يخضعان لمفتاح «ساعدنا نحسّن سكة». يظهر المفتاح عند إعداد التطبيق لأول مرة، ويمكنك تغييره في أي وقت من «الملف» ← «البيانات». المفتاح مُفعّل افتراضيًا، وإيقافه يوقفهما تمامًا. المفتاح لا يتحكم في البلاغات التي ترسلها بنفسك (أدناه)، ولا في الخرائط، ولا في الإشعارات، ولا في الإعلانات.</p>
 
   <h2>البلاغات التي ترسلها بنفسك</h2>
   <ul>
@@ -109,14 +112,16 @@
     <li>الأسعار التي تُبلغ عنها</li>
     <li>طلبات إضافة خطوط جديدة — نص تكتبه بنفسك، حتى ٢٨٠ حرفًا</li>
     <li>بلاغات المحطات: تأكيد الاسم، أو اقتراح اسم صحيح، أو موقع صحيح</li>
+    <li>اقتراحات الخطوط: خط تصفه مرحلةً مرحلة — اسم المركبة كما تكتبه، ونقاط الركوب والنزول وأي نقاط على الطريق (كإحداثيات تضعها على الخريطة)، وملاحظة اختيارية حتى ٢٨٠ حرفًا</li>
   </ul>
   <div class="note">
     هذه البلاغات تُرسل عند ضغطك على زر الإرسال، و<strong>لا يتحكم فيها مفتاح «ساعدنا نحسّن سكة»</strong> لأنها اختيارية بطبيعتها. كل بلاغ يحمل معرّف الجهاز المذكور أعلاه.
   </div>
-  <p>ما تكتبه في طلب خط جديد يصلنا كما هو — لا تكتب فيه ما لا ترغب في مشاركته.</p>
+  <p>ما تكتبه في طلب خط جديد أو اقتراح خط يصلنا كما هو — لا تكتب فيه ما لا ترغب في مشاركته.</p>
+  <p>كل ما يُرسل من التطبيق يُكتب فقط: لا يستطيع أي تطبيق، بما فيه نسختك، قراءته مرة أخرى.</p>
 
   <h2>معلومات تقنية</h2>
-  <p>مع كل بلاغ يُرسل نظام التشغيل (أندرويد أو iOS) ورقم إصدار التطبيق ووقت الإرسال.</p>
+  <p>مع كل ما يُرسل — بلاغًا كان أو بيانات استخدام — يُرسل نظام التشغيل (أندرويد أو iOS) ووقت الإرسال، ومع البلاغات وعمليات البحث رقم إصدار التطبيق أيضًا.</p>
 
   <h2>لماذا نجمع هذه البيانات</h2>
   <ul>
@@ -133,11 +138,11 @@
 
   <h2>الجهات الخارجية</h2>
   <ul>
-    <li><strong>Google Firebase</strong> — يخزّن بلاغاتك ويوصّل تحديثات بيانات المواصلات، ويعالجها نيابةً عنا.</li>
+    <li><strong>Google Firebase</strong> — يخزّن ما يرسله التطبيق ويوصّل تحديثات بيانات المواصلات، ويعالجها نيابةً عنا.</li>
     <li><strong>Google Mobile Ads</strong> — كما هو موضّح أعلاه. هذه هي الجهة الوحيدة التي نشارك معها بيانات لأغراضها الخاصة.</li>
-    <li><strong>CARTO</strong> — صور الخرائط.</li>
+    <li><strong>OpenFreeMap</strong> — خرائط المناطق خارج القاهرة، وملف فهرس صغير يُحدَّث أسبوعيًا. خرائط القاهرة مضمّنة في التطبيق.</li>
     <li><strong>Google Maps</strong> — عند الضغط على «الاتجاهات» أو لصق رابط مختصر.</li>
-    <li><strong>إشعارات Firebase</strong> — لإرسال تنبيهات عامة لكل المستخدمين. لا نرسل إشعارات موجّهة لشخص بعينه، ولا نحتفظ بأي رمز يسمح بذلك.</li>
+    <li><strong>إشعارات Firebase</strong> — لإرسال تنبيهات عامة لكل المستخدمين. ليعمل ذلك، تحتفظ Google برمز إشعارات لجهازك على خوادمها، كما تفعل مع أي تطبيق يستخدم خدمتها؛ سكة لا يخزّن هذا الرمز، ويشترك كل جهاز في قناة واحدة مشتركة، ولا يملك التطبيق وسيلة لإرسال إشعار لشخص بعينه. تذكير «هل وصلت؟» بعد رحلة يُجدوَل على جهازك نفسه ولا يمر بأي خادم.</li>
   </ul>
 
   <h2>مدة الاحتفاظ بالبيانات</h2>
@@ -159,26 +164,29 @@
   <p>Sekka has no accounts. We never ask for your name, email address, or phone number.</p>
 
   <h2>Your device identifier</h2>
-  <p>When you send your first report, the app generates a random number (a UUID), stores it on your device, and sends it with each report so we can tell repeated reports from the same device apart. It is not linked to you, and we cannot use it to identify you.</p>
-  <p>You can see it in the app under Profile → About, and tap to copy it. To reset it, clear the app's data in your device settings — a new one is created with your next report. Uninstalling and reinstalling also gives you a new one, because we have turned off Android's backup of the app's data.</p>
+  <p>The first time the app sends anything — a search with the <em>Help improve Sekka</em> switch on, or a report you send yourself — it generates a random number (a UUID), stores it on your device, and sends it with everything it sends after that, so we can tell what came from the same device. It is never created before then: a device that has sent nothing has no identifier. It is not linked to you, and we cannot use it to identify you.</p>
+  <p>You can see it in the app under Profile → About Sekka, and tap to copy it. To reset it, clear the app's data in your device settings — a new one is created the next time the app sends something. Uninstalling and reinstalling also gives you a new one, because we have turned off Android's backup of the app's data.</p>
 
   <h2>Location</h2>
   <p>If you grant location permission, your location is used on your device to find the nearest stop as a starting point. It is optional — you can search for a stop or pick one on the map instead.</p>
   <p>Your location reaches others in these cases:</p>
   <ul>
-    <li><strong>Correcting a stop's position:</strong> the point you pick on the map is sent to us. The map opens at your current location, so if you don't move it, the point is near where you are.</li>
-    <li><strong>Map images:</strong> these load from CARTO's servers, which receive your IP address and the area you're viewing — as any website you visit does.</li>
+    <li><strong>Correcting a stop's position:</strong> the point you pick on the map is sent to us. The map opens at your current location if you have allowed that, so if you don't move it, the point is near where you are.</li>
+    <li><strong>Suggesting a route:</strong> the points you place for each leg — where you board, where you get off, and any points along the way — are sent to us as coordinates you chose.</li>
+    <li><strong>A search started from your location:</strong> your coordinates are not sent. What is sent is the nearest stop we matched and how far you were from it, in metres — a distance to a known point, not your position. This is what the app means by "no location" on the <em>Help improve Sekka</em> switch: no position ever leaves your phone automatically.</li>
+    <li><strong>Maps of Cairo:</strong> built into the app and read from your device, so no request leaves the phone to show them. Outside that area, map tiles load from OpenFreeMap's servers, which receive your IP address and the map area being viewed, and nothing else. Once a week the app also refreshes a small map index file from OpenFreeMap; that request carries only your IP address.</li>
     <li><strong>The Directions button:</strong> opens whichever maps app is on your device and passes it <em>the destination only</em> — Sekka does not send your starting point. That app then uses your location under its own permissions.</li>
     <li><strong>Pasting a shortened maps link:</strong> Sekka opens the link to find the destination, and that request reaches Google carrying your IP address.</li>
   </ul>
+  <p>Saved places and recent trips are kept on your device only. A saved place's name never leaves the phone; if you use one in a search or a route suggestion, only its coordinates travel.</p>
 
   <h2>How you use the app</h2>
   <p>Two things are collected automatically:</p>
   <ul>
-    <li><strong>Searches:</strong> your start and destination stops and how many results came back — this shows us where our data has gaps.</li>
-    <li><strong>Routes you open:</strong> which routes get used most.</li>
+    <li><strong>Searches:</strong> your start and destination stops and how many results came back — this shows us where our data has gaps. If a search started from your location or a point on the map, the distance in metres between that point and the stop we matched is sent too (see Location above).</li>
+    <li><strong>Routes you open:</strong> which route's details you opened — this shows us which routes get used most.</li>
   </ul>
-  <p>These two, and only these two, are controlled by the <em>Help improve Sekka</em> switch in your profile. It is on by default, and turning it off stops both completely.</p>
+  <p>These two, and only these two, are controlled by the <em>Help improve Sekka</em> switch. It is shown when you first set up the app, and you can change it any time under Profile → Data. It is on by default, and turning it off stops both completely. It does not control the reports you send yourself (below), the map, notifications, or ads.</p>
 
   <h2>Reports you send yourself</h2>
   <ul>
@@ -186,14 +194,16 @@
     <li>Fares you report</li>
     <li>Requests for routes we're missing — text you write, up to 280 characters</li>
     <li>Stop reports: confirming a name, suggesting a corrected name, or a corrected position</li>
+    <li>Route suggestions: a route you describe leg by leg — the vehicle's name as you write it, the points where you board and get off and any points along the way (as coordinates you place on the map), and an optional note up to 280 characters</li>
   </ul>
   <div class="note">
     These are sent when you tap submit, and <strong>the <em>Help improve Sekka</em> switch does not control them</strong>, because sending them is already a choice. Each one carries the device identifier described above.
   </div>
-  <p>Whatever you type into a route request reaches us as written — don't put anything in it you'd rather not share.</p>
+  <p>Whatever you type into a route request or a route suggestion reaches us as written — don't put anything in it you'd rather not share.</p>
+  <p>Everything the app sends is write-only: no app, including your own copy, can read it back.</p>
 
   <h2>Technical details</h2>
-  <p>Each report includes your platform (Android or iOS), the app version, and the time it was sent.</p>
+  <p>Everything sent — reports and usage data alike — includes your platform (Android or iOS) and the time it was sent; reports and searches also include the app version.</p>
 
   <h2>Why we collect it</h2>
   <ul>
@@ -210,11 +220,11 @@
 
   <h2>Third parties</h2>
   <ul>
-    <li><strong>Google Firebase</strong> — stores your reports and delivers transit data updates, processing them on our behalf.</li>
+    <li><strong>Google Firebase</strong> — stores what the app sends and delivers transit data updates, processing them on our behalf.</li>
     <li><strong>Google Mobile Ads</strong> — as described above. This is the only party we share data with for their own purposes.</li>
-    <li><strong>CARTO</strong> — map images.</li>
+    <li><strong>OpenFreeMap</strong> — map tiles outside Cairo, and a small index file refreshed weekly. Cairo's maps are built into the app.</li>
     <li><strong>Google Maps</strong> — when you tap Directions or paste a shortened link.</li>
-    <li><strong>Firebase Cloud Messaging</strong> — sends announcements to all users. We do not send notifications targeted at individuals, and we store no token that would allow it.</li>
+    <li><strong>Firebase Cloud Messaging</strong> — sends announcements to all users. To do that, Google keeps a push token for your device on its servers, as it does for any app that uses the service; Sekka never stores that token, every device subscribes to one shared channel, and the app has no way to message one person. The "did you make it?" reminder after a trip is scheduled on your device itself and passes through no server.</li>
   </ul>
 
   <h2>How long we keep it</h2>
@@ -243,10 +253,10 @@
       body=document.body,html=document.documentElement;
   var t={
     ar:{dir:'rtl',lang:'ar',brand:'سكة — سياسة الخصوصية',sub:'تطبيق المواصلات العامة في القاهرة',
-        meta:'آخر تحديث: ٥ أغسطس ٢٠٢٦',
+        meta:'آخر تحديث: ٢ سبتمبر ٢٠٢٦',
         foot:'سكة — تطبيق مواصلات القاهرة · <a href="mailto:sekkaproj@gmail.com">sekkaproj@gmail.com</a>'},
     en:{dir:'ltr',lang:'en',brand:'Sekka — Privacy Policy',sub:'The Cairo public transport app',
-        meta:'Last updated: 5 August 2026',
+        meta:'Last updated: 2 September 2026',
         foot:'Sekka — Cairo transit app · <a href="mailto:sekkaproj@gmail.com">sekkaproj@gmail.com</a>'}
   };
   function show(l){
