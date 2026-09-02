@@ -70,7 +70,7 @@
   <div class="rails" aria-hidden="true"><i></i><i></i><i></i></div>
   <h1 class="brand" id="brand">سكة — سياسة الخصوصية</h1>
   <p class="sub" id="subtitle">تطبيق المواصلات العامة في القاهرة</p>
-  <p class="meta" id="meta">آخر تحديث: ٢ سبتمبر ٢٠٢٦</p>
+  <p class="meta" id="meta">آخر تحديث: ٣ سبتمبر ٢٠٢٦</p>
   <div class="toggle">
     <button type="button" id="btn-ar" aria-pressed="true">العربية</button>
     <button type="button" id="btn-en" aria-pressed="false">English</button>
@@ -91,6 +91,7 @@
   <ul>
     <li><strong>عند تصحيح موقع محطة:</strong> النقطة التي تحددها على الخريطة تُرسل إلينا. الخريطة تبدأ من موقعك الحالي إن كنت قد سمحت بذلك، فإن لم تحرّكها فالنقطة قريبة من مكانك.</li>
     <li><strong>عند اقتراح خط:</strong> النقاط التي تضعها لكل مرحلة — أين تركب، وأين تنزل، وأي نقاط على الطريق — تُرسل إلينا كإحداثيات اخترتها بنفسك.</li>
+    <li><strong>عند اقتراح مكان ناقص:</strong> النقطة التي تحددها تُرسل إلينا بدقة ودون تقريب. والخريطة تبدأ من موقعك أنت إن كنت قد سمحت بذلك، فإن لم تحرّك المؤشر فأنت ترسل مكانك.</li>
     <li><strong>بحث يبدأ من موقعك:</strong> لا تُرسل إحداثياتك. يُرسل بدلًا منها اسم أقرب محطة طابقناها والمسافة بينك وبينها بالمتر — مسافة إلى نقطة معروفة، لا موقعك. هذا ما يعنيه التطبيق بعبارة «ولا مكانك» في مفتاح «ساعدنا نحسّن سكة»: لا يغادر أي موقع جهازك تلقائيًا.</li>
     <li><strong>خرائط القاهرة:</strong> مضمّنة داخل التطبيق وتُقرأ من جهازك، فلا يخرج أي طلب من الهاتف لعرضها. خارج تلك المنطقة تُحمّل الخرائط من خوادم OpenFreeMap، فيصلها عنوان IP الخاص بك والمنطقة التي تشاهدها، ولا شيء غير ذلك. ويحدّث التطبيق مرة أسبوعيًا ملف فهرس صغيرًا للخرائط من OpenFreeMap، ولا يحمل هذا الطلب سوى عنوان IP.</li>
     <li><strong>زر «الاتجاهات»:</strong> يفتح تطبيق الخرائط على جهازك ويمرّر له <em>الوجهة فقط</em> — سكة لا يرسل نقطة البداية. تطبيق الخرائط بعدها يستخدم موقعك بصلاحياته الخاصة.</li>
@@ -113,12 +114,14 @@
     <li>طلبات إضافة خطوط جديدة — نص تكتبه بنفسك، حتى ٢٨٠ حرفًا</li>
     <li>بلاغات المحطات: تأكيد الاسم، أو اقتراح اسم صحيح، أو موقع صحيح</li>
     <li>اقتراحات الخطوط: خط تصفه مرحلةً مرحلة — اسم المركبة كما تكتبه، ونقاط الركوب والنزول وأي نقاط على الطريق (كإحداثيات تضعها على الخريطة)، وملاحظة اختيارية حتى ٢٨٠ حرفًا</li>
+    <li>الأماكن الناقصة: محطة أو مكان تحدده على الخريطة — الاسم الذي تكتبه له، وإحداثياته بدقة، وملاحظة اختيارية حتى ٢٨٠ حرفًا</li>
   </ul>
   <div class="note">
     هذه البلاغات تُرسل عند ضغطك على زر الإرسال، و<strong>لا يتحكم فيها مفتاح «ساعدنا نحسّن سكة»</strong> لأنها اختيارية بطبيعتها. كل بلاغ يحمل معرّف الجهاز المذكور أعلاه.
   </div>
   <p>ما تكتبه في طلب خط جديد أو اقتراح خط يصلنا كما هو — لا تكتب فيه ما لا ترغب في مشاركته.</p>
   <p>كل ما يُرسل من التطبيق يُكتب فقط: لا يستطيع أي تطبيق، بما فيه نسختك، قراءته مرة أخرى.</p>
+  <p><strong>الأماكن الناقصة.</strong> في خريطة اختيار الموقع زر «ضيف محطة للمراجعة»، يفتح شاشة تحدد فيها المكان وتكتب الاسم الذي يسمّيه به الناس؛ ولا يُرسل شيء حتى تضغط «ابعت للكل» في تلك الشاشة. ما يصلنا هو هذا الاسم، والإحداثيات التي حددتها بدقة ودون تقريب، وملاحظة اختيارية حتى ٢٨٠ حرفًا، ومعرّف الجهاز ونظام التشغيل ورقم إصدار التطبيق ووقت الإرسال — كما في أي بلاغ آخر. ولا يتحكم مفتاح «ساعدنا نحسّن سكة» في هذا. نراجع كل اقتراح يدويًا، وإن كان صحيحًا أضفنا الاسم إلى بيانات المواصلات في سكة، فيظهر في البحث لكل المستخدمين — والشاشة تنبّهك إلى ذلك قبل الإرسال، وتطلب منك الاسم الذي يعرفه الناس جميعًا لا اسمك أنت. ولا توجد طريقة داخل التطبيق لتعديل اقتراح أرسلته أو سحبه؛ وطلب الحذف (أدناه) يحذف ما أرسلته، أما الاسم الذي أُضيف بالفعل إلى بيانات المواصلات فيبقى جزءًا من تلك البيانات، غير مرتبط بمعرّف جهازك.</p>
 
   <h2>معلومات تقنية</h2>
   <p>مع كل ما يُرسل — بلاغًا كان أو بيانات استخدام — يُرسل نظام التشغيل (أندرويد أو iOS) ووقت الإرسال، ومع البلاغات وعمليات البحث رقم إصدار التطبيق أيضًا.</p>
@@ -173,6 +176,7 @@
   <ul>
     <li><strong>Correcting a stop's position:</strong> the point you pick on the map is sent to us. The map opens at your current location if you have allowed that, so if you don't move it, the point is near where you are.</li>
     <li><strong>Suggesting a route:</strong> the points you place for each leg — where you board, where you get off, and any points along the way — are sent to us as coordinates you chose.</li>
+    <li><strong>Suggesting a place we're missing:</strong> the exact point you mark is sent to us, unrounded. The map opens at your own position when you have allowed location, so a crosshair you don't move sends where you are.</li>
     <li><strong>A search started from your location:</strong> your coordinates are not sent. What is sent is the nearest stop we matched and how far you were from it, in metres — a distance to a known point, not your position. This is what the app means by "no location" on the <em>Help improve Sekka</em> switch: no position ever leaves your phone automatically.</li>
     <li><strong>Maps of Cairo:</strong> built into the app and read from your device, so no request leaves the phone to show them. Outside that area, map tiles load from OpenFreeMap's servers, which receive your IP address and the map area being viewed, and nothing else. Once a week the app also refreshes a small map index file from OpenFreeMap; that request carries only your IP address.</li>
     <li><strong>The Directions button:</strong> opens whichever maps app is on your device and passes it <em>the destination only</em> — Sekka does not send your starting point. That app then uses your location under its own permissions.</li>
@@ -195,12 +199,14 @@
     <li>Requests for routes we're missing — text you write, up to 280 characters</li>
     <li>Stop reports: confirming a name, suggesting a corrected name, or a corrected position</li>
     <li>Route suggestions: a route you describe leg by leg — the vehicle's name as you write it, the points where you board and get off and any points along the way (as coordinates you place on the map), and an optional note up to 280 characters</li>
+    <li>Missing places: a stop or place you mark on the map — the name you type for it, its exact coordinates, and an optional note up to 280 characters</li>
   </ul>
   <div class="note">
     These are sent when you tap submit, and <strong>the <em>Help improve Sekka</em> switch does not control them</strong>, because sending them is already a choice. Each one carries the device identifier described above.
   </div>
   <p>Whatever you type into a route request or a route suggestion reaches us as written — don't put anything in it you'd rather not share.</p>
   <p>Everything the app sends is write-only: no app, including your own copy, can read it back.</p>
+  <p><strong>Places we're missing.</strong> The map picker has an <em>Add stop for review</em> button. It opens a screen where you mark the spot and type the name people call it; nothing is sent until you tap <em>Send for everyone</em> there. What reaches us is that name, the exact coordinates you marked — not rounded — an optional note of up to 280 characters, and the same device identifier, platform, app version and time that every other report carries. The <em>Help improve Sekka</em> switch does not control it. We check each one by hand, and if it is right we add the name to Sekka's transit data, where it appears in search for every rider — the screen says so before you send, and asks for the name everyone uses rather than your own. There is no way to edit or withdraw a suggestion inside Sekka; a deletion request (below) removes what you sent, but a name already added to the transit data stays there as part of that data, no longer attached to your device identifier.</p>
 
   <h2>Technical details</h2>
   <p>Everything sent — reports and usage data alike — includes your platform (Android or iOS) and the time it was sent; reports and searches also include the app version.</p>
@@ -253,10 +259,10 @@
       body=document.body,html=document.documentElement;
   var t={
     ar:{dir:'rtl',lang:'ar',brand:'سكة — سياسة الخصوصية',sub:'تطبيق المواصلات العامة في القاهرة',
-        meta:'آخر تحديث: ٢ سبتمبر ٢٠٢٦',
+        meta:'آخر تحديث: ٣ سبتمبر ٢٠٢٦',
         foot:'سكة — تطبيق مواصلات القاهرة · <a href="mailto:sekkaproj@gmail.com">sekkaproj@gmail.com</a>'},
     en:{dir:'ltr',lang:'en',brand:'Sekka — Privacy Policy',sub:'The Cairo public transport app',
-        meta:'Last updated: 2 September 2026',
+        meta:'Last updated: 3 September 2026',
         foot:'Sekka — Cairo transit app · <a href="mailto:sekkaproj@gmail.com">sekkaproj@gmail.com</a>'}
   };
   function show(l){
